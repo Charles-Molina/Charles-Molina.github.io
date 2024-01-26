@@ -25,7 +25,7 @@
             margin-bottom: 0;
         }
         nav {
-            background-color: #5a8de8; /* Slightly darker shade of blue for the navigation bar */
+            background-color: #74b9ff; /* Same shade of blue for the navigation bar */
             padding: 1em 0;
             text-align: center;
         }
@@ -96,5 +96,17 @@
         <h2>Contact</h2>
         <p>You can reach me at: your@email.com</p>
     </section>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
