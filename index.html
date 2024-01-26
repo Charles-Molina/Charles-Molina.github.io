@@ -102,21 +102,61 @@
     </section>
 </body>
 </html>
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mkndoqke" method="post">
-        <label for="full-name">Full Name:</label>
-        <input type="text" id="full-name" name="full-name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Molina - Professional Overview</title>
+    <style>
+        /* ... (existing styles) ... */
+        section#contact {
+            background-color: #5a8de8;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section#contact label, section#contact textarea, section#contact input[type="text"], section#contact input[type="email"] {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        section#contact input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- ... (existing code) ... -->
 
-        <input type="submit" value="Send">
-    </form>
-</section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mkndoqke" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</body>
+</html>
