@@ -34,13 +34,8 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
+            font-weight: bold; /* Make the text bold */
             cursor: pointer;
-            display: inline-block; /* Make each link a block element */
-            padding: 0 15px; /* Add padding to separate text from the border */
-            border-right: 1px solid #fff; /* Thin white line between each link */
-        }
-        nav a:last-child {
-            border-right: none; /* Remove the border for the last link */
         }
         section {
             max-width: 800px;
@@ -101,17 +96,5 @@
         <h2>Contact</h2>
         <p>You can reach me at: your@email.com</p>
     </section>
-
-    <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
