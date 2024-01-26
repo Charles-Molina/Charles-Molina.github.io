@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set character encoding and define viewport for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
     <title>Charles Molina - Professional Overview</title>
+
+    <!-- Internal CSS styles for the webpage -->
     <style>
+        /* Set font, background color, and text color for the body */
         body {
             font-family: 'Times New Roman', serif;
             background-color: #f0f0f0; /* Light shade of grey */
@@ -13,25 +18,35 @@
             padding: 0;
             line-height: 1.6;
         }
+
+        /* Styling for the header section at the top of the page */
         header {
             background-color: #74b9ff; /* Lighter shade of blue for the entire top bar */
             color: #fff;
             text-align: center;
             padding: 2em 0;
         }
+
+        /* Styling for the main title */
         h1 {
             font-family: 'Times New Roman', serif;
             font-size: 3em; /* Adjust the size as needed */
             margin-bottom: 0;
         }
+
+        /* Styling for strong elements (bold text) */
         strong {
             font-weight: bold; /* Make "Professional Overview" bold */
         }
+
+        /* Styling for the navigation bar */
         nav {
             background-color: #5a8de8; /* Slightly darker shade of blue for the navigation bar */
             padding: 1em 0;
             text-align: center;
         }
+
+        /* Styling for navigation links */
         nav a {
             color: #fff;
             text-decoration: none;
@@ -40,6 +55,8 @@
             font-weight: bold; /* Make the text bold */
             cursor: pointer;
         }
+
+        /* Styling for each section of content on the page */
         section {
             max-width: 800px;
             margin: 0 auto;
@@ -49,10 +66,14 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Styling for section headers */
         h2, h3 {
             color: #3498db;
             text-align: center; /* Center the section headers */
         }
+
+        /* Styling for the "Contact Me" section */
         section#contact {
             background-color: #74b9ff;
             color: #fff;
@@ -61,17 +82,23 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Styling for the "Contact Me" section title */
         section#contact h2 {
             font-weight: bold;
             margin-bottom: 20px;
             color: #74b9ff; /* Change "Contact Me" title color */
         }
+
+        /* Styling for form elements within the "Contact Me" section */
         section#contact label, section#contact textarea, section#contact input[type="text"], section#contact input[type="email"] {
             width: 100%;
             margin-bottom: 15px;
             padding: 10px;
             box-sizing: border-box;
         }
+
+        /* Styling for the submit button in the "Contact Me" section */
         section#contact input[type="submit"] {
             background-color: #3498db;
             color: #fff;
@@ -83,11 +110,13 @@
     </style>
 </head>
 <body>
+    <!-- Header section with the main title and professional overview -->
     <header>
         <h1>Charles Molina</h1>
         <p style="font-size: 1.2em;"><strong>Professional Overview</strong></p>
     </header>
 
+    <!-- Navigation bar with links to different sections -->
     <nav>
         <a href="#about">About Me</a>
         <a href="#objective">Objective Statement</a>
@@ -97,47 +126,58 @@
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- About Me section with an image and introduction -->
     <section id="about">
         <h2>About Me</h2>
         <img src="your_image_file.jpg" alt="Charles Molina's Photo" style="max-width: 100%; height: auto;">
         <p>Write a brief introduction about yourself here.</p>
     </section>
 
+    <!-- Objective Statement section -->
     <section id="objective">
         <h2>Objective Statement</h2>
         <p>Include your career objective or a brief statement about your goals.</p>
     </section>
 
+    <!-- Relevant Coursework section -->
     <section id="coursework">
         <h2>Relevant Coursework</h2>
         <p>List the relevant coursework you have completed.</p>
     </section>
 
+    <!-- Key Academic Projects section -->
     <section id="projects">
         <h2>Key Academic Projects</h2>
         <p>Provide information about key academic projects you have worked on.</p>
     </section>
 
+    <!-- Skills section -->
     <section id="skills">
         <h2>Skills</h2>
         <p>List your relevant skills here.</p>
     </section>
 
+    <!-- Contact Me section with a form for user input -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/mkndoqke" method="post">
+            <!-- Full Name input field -->
             <label for="full-name">Full Name:</label>
             <input type="text" id="full-name" name="full-name" required>
 
+            <!-- Email input field -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
+            <!-- Subject input field -->
             <label for="subject">Subject:</label>
             <input type="text" id="subject" name="subject" required>
 
+            <!-- Message textarea -->
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
+            <!-- Submit button -->
             <input type="submit" value="Send">
         </form>
     </section>
